@@ -597,8 +597,6 @@ require get_template_directory() . '/inc/block-patterns/block-patterns.php';
 /* TGM Plugin Activation */
 require get_template_directory() . '/inc/tgm/tgm.php';
 
-/* Plugin Activation */
-require get_template_directory() . '/inc/getting-started/plugin-activation.php';
 
 /* Webfonts */
 require get_template_directory() . '/inc/wptt-webfont-loader.php';

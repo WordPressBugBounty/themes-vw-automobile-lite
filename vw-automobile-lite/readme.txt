@@ -4,7 +4,7 @@ Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 7.2
-Stable tag: 2.0.8
+Stable tag: 2.0.9
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -745,6 +745,12 @@ Our Automobile WordPress Theme is designed to be stylish and classy, much like a
 
 = 2.0.8 =
   -- Changed get started.
+
+= 2.0.9 =
+  -- Added show /hide featured image option in grid post.
+  -- Added single post image box shadow option.
+  -- Added close toggle button bg color option.
+  -- Updated pot file.
 
 == Resources ==
 

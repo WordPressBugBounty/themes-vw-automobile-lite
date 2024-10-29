@@ -7,7 +7,7 @@ Description: Our Automobile WordPress Theme is designed to be stylish and classy
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 7.2
-Version: 2.0.8
+Version: 2.0.9
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: vw-automobile-lite
@@ -2663,11 +2663,13 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 20px;
     display: block !important;
-    color: #000;
+    color: #fff;
+    background: #ff5400;
+    padding: 6px 12px;
     border:none;
-    background: transparent;
+    border-radius: 50%;
     margin-top: 0;
   }
   .sidenav #site-navigation {
