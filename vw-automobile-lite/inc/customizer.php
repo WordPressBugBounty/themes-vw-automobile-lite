@@ -2122,6 +2122,38 @@ function vw_automobile_lite_customize_register($wp_customize) {
         ),
 	) );
 
+	$wp_customize->add_setting( 'vw_automobile_lite_grid_featured_image_border_radius', array(
+		'default'              => '0',
+		'transport' 		   => 'refresh',
+		'sanitize_callback'    => 'vw_automobile_lite_sanitize_number_range'
+	) );
+	$wp_customize->add_control( 'vw_automobile_lite_grid_featured_image_border_radius', array(
+		'label'       => esc_html__( 'Grid Featured Image Border Radius','vw-automobile-lite' ),
+		'section'     => 'vw_automobile_lite_grid_layout_settings',
+		'type'        => 'range',
+		'input_attrs' => array(
+			'step'             => 1,
+			'min'              => 1,
+			'max'              => 50,
+		),
+	) );
+
+	$wp_customize->add_setting( 'vw_automobile_lite_grid_featured_image_box_shadow', array(
+		'default'              => '0',
+		'transport' 		   => 'refresh',
+		'sanitize_callback'    => 'vw_automobile_lite_sanitize_number_range'
+	) );
+	$wp_customize->add_control( 'vw_automobile_lite_grid_featured_image_box_shadow', array(
+		'label'       => esc_html__( 'Grid Featured Image Box Shadow','vw-automobile-lite' ),
+		'section'     => 'vw_automobile_lite_grid_layout_settings',
+		'type'        => 'range',
+		'input_attrs' => array(
+			'step'             => 1,
+			'min'              => 1,
+			'max'              => 50,
+		),
+	) );
+
     //Others Settings
 	$wp_customize->add_panel( 'vw_automobile_lite_others_panel', array(
 		'title' => esc_html__( 'Others Settings', 'vw-automobile-lite' ),

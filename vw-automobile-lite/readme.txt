@@ -2,9 +2,9 @@
 Contributors: VWthemes
 Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, grid-layout, wide-blocks, block-styles, flexible-header, block-patterns, custom-colors, custom-background, custom-logo, custom-menu, custom-header, editor-style, featured-images, footer-widgets, sticky-post, buddypress, full-width-template, post-formats, theme-options, threaded-comments, translation-ready, rtl-language-support, blog, e-commerce, portfolio
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.2
-Stable tag: 2.0.9
+Stable tag: 2.1
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -750,6 +750,13 @@ Our Automobile WordPress Theme is designed to be stylish and classy, much like a
   -- Added show /hide featured image option in grid post.
   -- Added single post image box shadow option.
   -- Added close toggle button bg color option.
+  -- Updated pot file.
+
+= 2.1 =
+  -- Added grid featured image border radius option.
+  -- Added grid featured image box shadow option.
+  -- Resolved css error for customizer.
+  -- Tested upto WP v6.7
   -- Updated pot file.
 
 == Resources ==

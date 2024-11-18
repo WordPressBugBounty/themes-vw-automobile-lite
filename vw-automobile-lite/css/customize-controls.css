@@ -276,3 +276,11 @@ li#accordion-section-vw_automobile_lite_testimonial_slider .accordion-section-ti
 #accordion-section-vw_automobile_lite_get_bundle_link h3.accordion-section-title{
   font-size: 12px !important;
 }
+
+#accordion-section-vw_automobile_lite_upgrade_pro_link .accordion-section-title:after,#accordion-section-vw_automobile_lite_get_started_link .accordion-section-title:after,
+#accordion-section-vw_automobile_lite_get_bundle_link .accordion-section-title:after{
+  display: none;
+}
+.customize-pane-parent{
+  overflow-x: hidden !important;
+}
