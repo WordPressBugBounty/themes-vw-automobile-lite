@@ -579,16 +579,16 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'type'        => 'select',
 		'settings'    => 'vw_automobile_lite_slider_opacity_color',
 		'choices' => array(
-	      '0' =>  esc_attr('0','vw-automobile-lite'),
-	      '0.1' =>  esc_attr('0.1','vw-automobile-lite'),
-	      '0.2' =>  esc_attr('0.2','vw-automobile-lite'),
-	      '0.3' =>  esc_attr('0.3','vw-automobile-lite'),
-	      '0.4' =>  esc_attr('0.4','vw-automobile-lite'),
-	      '0.5' =>  esc_attr('0.5','vw-automobile-lite'),
-	      '0.6' =>  esc_attr('0.6','vw-automobile-lite'),
-	      '0.7' =>  esc_attr('0.7','vw-automobile-lite'),
-	      '0.8' =>  esc_attr('0.8','vw-automobile-lite'),
-	      '0.9' =>  esc_attr('0.9','vw-automobile-lite')
+	      '0' =>  esc_attr(__('0','vw-automobile-lite')),
+	      '0.1' =>  esc_attr(__('0.1','vw-automobile-lite')),
+	      '0.2' =>  esc_attr(__('0.2','vw-automobile-lite')),
+	      '0.3' =>  esc_attr(__('0.3','vw-automobile-lite')),
+	      '0.4' =>  esc_attr(__('0.4','vw-automobile-lite')),
+	      '0.5' =>  esc_attr(__('0.5','vw-automobile-lite')),
+	      '0.6' =>  esc_attr(__('0.6','vw-automobile-lite')),
+	      '0.7' =>  esc_attr(__('0.7','vw-automobile-lite')),
+	      '0.8' =>  esc_attr(__('0.8','vw-automobile-lite')),
+	      '0.9' =>  esc_attr(__('0.9','vw-automobile-lite'))
 	),'active_callback' => 'vw_automobile_lite_default_slider'
 	));
 
@@ -638,7 +638,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_search_vehicle_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_search_vechicle',
 		'type'=> 'hidden'
 	));
@@ -668,7 +668,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_about_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_about',
 		'type'=> 'hidden'
 	));
@@ -698,7 +698,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_our_brands_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_our_brands',
 		'type'=> 'hidden'
 	));
@@ -728,7 +728,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_featured_car_update_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_featured_car_update',
 		'type'=> 'hidden'
 	));
@@ -823,7 +823,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_select_car_text_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_select_car',
 		'type'=> 'hidden'
 	));
@@ -853,7 +853,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_latest_update_car_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_latest_update_car',
 		'type'=> 'hidden'
 	));
@@ -883,7 +883,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_testimonial_slider_btn',array(
-		'description' => "<a class='go-pro' target='_blank' href='". admin_url('themes.php?page=vw_automobile_lite_guide') ." '>More Info</a>",
+		'description' => "<a class='go-pro' target='_blank' href=".esc_url(VW_AUTOMOBILE_LITE_BUY_NOW).">More Info</a>",
 		'section'=> 'vw_automobile_lite_testimonial_slider',
 		'type'=> 'hidden'
 	));

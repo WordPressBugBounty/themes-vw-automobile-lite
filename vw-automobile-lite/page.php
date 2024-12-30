@@ -89,6 +89,8 @@ get_header(); ?>
                 </div>
             </div>
         <?php } ?>
+        <?php echo esc_html (vw_automobile_lite_edit_link()); ?>
+
         <div class="clear"></div>    
     </div>
 </main>
