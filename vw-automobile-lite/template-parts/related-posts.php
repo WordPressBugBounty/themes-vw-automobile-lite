@@ -32,7 +32,7 @@ if ( $vw_automobile_lite_related_posts->have_posts() ) : ?>
             <div class="col-lg-4 col-md-6">
                 <article id="post-<?php the_ID(); ?>" <?php post_class('inner-service'); ?>>
                     <div class="post-main-box">
-                        <?php if( get_theme_mod( 'vw_automobile_lite_featured_image_hide_show',true) == 1) { ?>
+                        <?php if( get_theme_mod( 'vw_automobile_lite_related_image_hide_show',true) == 1) { ?>
                             <div class="box-image">
                                 <?php
                                     if(has_post_thumbnail()) {
@@ -55,9 +55,9 @@ if ( $vw_automobile_lite_related_posts->have_posts() ) : ?>
                                     <?php }?>
                             </div>
                         </div>
-                        <?php if( get_theme_mod('vw_automobile_lite_button_text','Read More') != ''){ ?>
+                        <?php if( get_theme_mod('vw_automobile_lite_related_button_text','Read More') != ''){ ?>
                             <div class="content-bttn">
-                                <a href="<?php the_permalink();?>" class="blogbutton-small hvr-sweep-to-right"><?php echo esc_html(get_theme_mod('vw_automobile_lite_button_text',__('Read More','vw-automobile-lite')));?><span class="screen-reader-text"><?php echo esc_html(get_theme_mod('vw_automobile_lite_button_text',__('Read More','vw-automobile-lite')));?></span></a>
+                                <a href="<?php the_permalink();?>" class="blogbutton-small hvr-sweep-to-right"><?php echo esc_html(get_theme_mod('vw_automobile_lite_related_button_text',__('Read More','vw-automobile-lite')));?><span class="screen-reader-text"><?php echo esc_html(get_theme_mod('vw_automobile_lite_related_button_text',__('Read More','vw-automobile-lite')));?></span></a>
                             </div>
                         <?php } ?>
                     </div>

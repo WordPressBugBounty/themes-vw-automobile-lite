@@ -4,7 +4,7 @@ Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -763,6 +763,12 @@ Our Automobile WordPress Theme is designed to be stylish and classy, much like a
   -- Updated form-checkout.php.
   -- Added edit link in single page.
   -- Changed the links for pro sections in customizer.
+
+= 2.1.2 =
+  -- Added show /hide featured image option in related post.
+  -- Added featured image box shadow option in related post.
+  -- Added button text option in related post.
+  -- Added css for return to cart button in checkout page.
 
 == Resources ==
 

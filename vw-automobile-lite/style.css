@@ -7,7 +7,7 @@ Description: Our Automobile WordPress Theme is designed to be stylish and classy
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Version: 2.1.1
+Version: 2.1.2
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: vw-automobile-lite
@@ -2272,7 +2272,7 @@ nav.navigation.posts-navigation .nav-previous, nav.navigation.posts-navigation .
   text-align: left;
 }
 /*cart and checkout css*/
-.wp-block-woocommerce-cart .wc-block-cart__submit-button, .wc-block-components-checkout-place-order-button, .wc-block-components-totals-coupon__button{
+.wp-block-woocommerce-cart .wc-block-cart__submit-button,a.wc-block-components-checkout-return-to-cart-button, .wc-block-components-checkout-place-order-button, .wc-block-components-totals-coupon__button{
   background-color: #ff5400 !important;
   color: #fff !important;
   text-decoration: none !important;
@@ -2280,7 +2280,13 @@ nav.navigation.posts-navigation .nav-previous, nav.navigation.posts-navigation .
   border: none !important;
   padding: 10px;
 }
-.wp-block-woocommerce-cart .wc-block-cart__submit-button:hover, .wc-block-components-checkout-place-order-button:hover{
+.wc-block-components-checkout-return-to-cart-button svg{
+  left: 3% !important;
+}
+a.wc-block-components-checkout-return-to-cart-button{
+  padding: 15px 12px 15px 30px !important;
+}
+.wp-block-woocommerce-cart .wc-block-cart__submit-button:hover, .wc-block-components-checkout-place-order-button:hover,a.wc-block-components-checkout-return-to-cart-button:hover{
   background: #000 !important;
   color: #fff !important;
 }
