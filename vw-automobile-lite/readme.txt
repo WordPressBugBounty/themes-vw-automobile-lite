@@ -4,7 +4,7 @@ Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -770,6 +770,14 @@ Our Automobile WordPress Theme is designed to be stylish and classy, much like a
   -- Added button text option in related post.
   -- Added css for return to cart button in checkout page.
 
+= 2.1.3 =
+  -- Added metafield in related post.
+  -- Added show/hide post date,author,comment and time option in related post setting.
+  -- Added post date,author,comment and time icons change option in related post setting.
+  -- Added classes to global color.
+  -- Resolved css error for login page.
+  -- Updated pot file.
+
 == Resources ==
 
 VW Automobile Lite WordPress Theme, Copyright 2017 VWthemes
@@ -854,6 +862,14 @@ VW Automobile Lite WordPress Theme bundles the following third-party resources:
   Slider image, Copyright Lance Asper
   License: CC0 1.0 Universal (CC0 1.0)
   Source: https://stocksnap.io/photo/K2SW4CJR55
+
+  Slider image, Copyright Lance Asper
+  License: CC0 1.0 Universal (CC0 1.0)
+  Source: https://stocksnap.io/photo/vintage-red-8QKIFL9ZUI
+
+  Slider image, Copyright Lance Asper
+  License: CC0 1.0 Universal (CC0 1.0)
+  Source: https://stocksnap.io/photo/retro-car-0DQ4GYMVW8
 
 == Theme Documentation ==
 Documentation : https://preview.themescaliber.com/doc/free-automobile/

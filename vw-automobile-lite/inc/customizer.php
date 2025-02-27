@@ -1467,7 +1467,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 	));
 
 	$wp_customize->add_setting('vw_automobile_lite_meta_field_separator',array(
-		'default'=> '',
+		'default'=> '|',
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_meta_field_separator',array(
@@ -1734,6 +1734,98 @@ function vw_automobile_lite_customize_register($wp_customize) {
 		),
 	) );
 
+	$wp_customize->add_setting( 'vw_automobile_lite_related_toggle_postdate',array(
+	    'default' => 1,
+	    'transport' => 'refresh',
+	    'sanitize_callback' => 'vw_automobile_lite_switch_sanitization'
+  	));
+  	$wp_customize->add_control( new VW_Automobile_Lite_Toggle_Switch_Custom_Control( $wp_customize, 'vw_automobile_lite_related_toggle_postdate',array(
+	    'label' => esc_html__( 'Show / Hide Post Date','vw-automobile-lite' ),
+	    'section' => 'vw_automobile_lite_related_posts_settings'
+  	)));
+
+  	$wp_customize->add_setting('vw_automobile_lite_related_postdate_icon',array(
+	    'default' => 'fas fa-calendar-alt',
+	    'sanitize_callback' => 'sanitize_text_field'
+  	));
+  	$wp_customize->add_control(new VW_Automobile_Lite_Fontawesome_Icon_Chooser(
+  	$wp_customize,'vw_automobile_lite_related_postdate_icon',array(
+	    'label' => __('Add Post Date Icon','vw-automobile-lite'),
+	    'transport' => 'refresh',
+	    'section' => 'vw_automobile_lite_related_posts_settings',
+	    'setting' => 'vw_automobile_lite_related_postdate_icon',
+	    'type'    => 'icon'
+  	)));
+
+	$wp_customize->add_setting( 'vw_automobile_lite_related_toggle_author',array(
+		'default' => 1,
+		'transport' => 'refresh',
+		'sanitize_callback' => 'vw_automobile_lite_switch_sanitization'
+  	));
+  	$wp_customize->add_control( new VW_Automobile_Lite_Toggle_Switch_Custom_Control( $wp_customize, 'vw_automobile_lite_related_toggle_author',array(
+		'label' => esc_html__( 'Show / Hide Author','vw-automobile-lite' ),
+		'section' => 'vw_automobile_lite_related_posts_settings'
+  	)));
+
+  	$wp_customize->add_setting('vw_automobile_lite_related_author_icon',array(
+	    'default' => 'fas fa-user',
+	    'sanitize_callback' => 'sanitize_text_field'
+  	));
+  	$wp_customize->add_control(new VW_Automobile_Lite_Fontawesome_Icon_Chooser(
+  	$wp_customize,'vw_automobile_lite_related_author_icon',array(
+	    'label' => __('Add Author Icon','vw-automobile-lite'),
+	    'transport' => 'refresh',
+	    'section' => 'vw_automobile_lite_related_posts_settings',
+	    'setting' => 'vw_automobile_lite_related_author_icon',
+	    'type'    => 'icon'
+  	)));
+
+	$wp_customize->add_setting( 'vw_automobile_lite_related_toggle_comments',array(
+		'default' => 1,
+		'transport' => 'refresh',
+		'sanitize_callback' => 'vw_automobile_lite_switch_sanitization'
+  	) );
+  	$wp_customize->add_control( new VW_Automobile_Lite_Toggle_Switch_Custom_Control( $wp_customize, 'vw_automobile_lite_related_toggle_comments',array(
+		'label' => esc_html__( 'Show / Hide Comments','vw-automobile-lite' ),
+		'section' => 'vw_automobile_lite_related_posts_settings'
+  	)));
+
+  	$wp_customize->add_setting('vw_automobile_lite_related_comments_icon',array(
+	    'default' => 'fa fa-comments',
+	    'sanitize_callback' => 'sanitize_text_field'
+  	));
+  	$wp_customize->add_control(new VW_Automobile_Lite_Fontawesome_Icon_Chooser(
+  	$wp_customize,'vw_automobile_lite_related_comments_icon',array(
+	    'label' => __('Add Comments Icon','vw-automobile-lite'),
+	    'transport' => 'refresh',
+	    'section' => 'vw_automobile_lite_related_posts_settings',
+	    'setting' => 'vw_automobile_lite_related_comments_icon',
+	    'type'    => 'icon'
+  	)));
+
+	$wp_customize->add_setting( 'vw_automobile_lite_related_toggle_time',array(
+		'default' => 1,
+		'transport' => 'refresh',
+		'sanitize_callback' => 'vw_automobile_lite_switch_sanitization'
+  	) );
+  	$wp_customize->add_control( new VW_Automobile_Lite_Toggle_Switch_Custom_Control( $wp_customize, 'vw_automobile_lite_related_toggle_time',array(
+		'label' => esc_html__( 'Show / Hide Time','vw-automobile-lite' ),
+		'section' => 'vw_automobile_lite_related_posts_settings'
+  	)));
+
+  	$wp_customize->add_setting('vw_automobile_lite_related_time_icon',array(
+	    'default' => 'fas fa-clock',
+	    'sanitize_callback' => 'sanitize_text_field'
+  	));
+  	$wp_customize->add_control(new VW_Automobile_Lite_Fontawesome_Icon_Chooser(
+  	$wp_customize,'vw_automobile_lite_related_time_icon',array(
+	    'label' => __('Add Time Icon','vw-automobile-lite'),
+	    'transport' => 'refresh',
+	    'section' => 'vw_automobile_lite_related_posts_settings',
+	    'setting' => 'vw_automobile_lite_related_time_icon',
+	    'type'    => 'icon'
+  	)));
+
 	$wp_customize->add_setting( 'vw_automobile_lite_related_image_hide_show',array(
 		'default' => 1,
 		'transport' => 'refresh',
@@ -1919,7 +2011,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 	) );
 
 	$wp_customize->add_setting('vw_automobile_lite_single_post_meta_field_separator',array(
-		'default'=> '',
+		'default'=> '|',
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_single_post_meta_field_separator',array(

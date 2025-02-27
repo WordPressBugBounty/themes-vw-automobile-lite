@@ -19,15 +19,15 @@
             <?php if( get_theme_mod( 'vw_automobile_lite_single_postdate',true) == 1 || get_theme_mod( 'vw_automobile_lite_single_author',true) == 1 || get_theme_mod( 'vw_automobile_lite_single_comments',true) == 1 || get_theme_mod( 'vw_automobile_lite_single_time',true) == 1) { ?>
                 <div class="metabox">
                     <?php if(get_theme_mod('vw_automobile_lite_single_postdate',true)==1){ ?>
-                      <span class="entry-date"><i class="<?php echo esc_attr(get_theme_mod('vw_automobile_lite_single_postdate_icon','fas fa-calendar-alt')); ?>"></i><a href="<?php echo esc_url( get_day_link( $vw_automobile_lite_archive_year, $vw_automobile_lite_archive_month, $vw_automobile_lite_archive_day)); ?>"><?php echo esc_html( get_the_date() ); ?><span class="screen-reader-text"><?php echo esc_html( get_the_date() ); ?></span></a></span><span><?php echo esc_html(get_theme_mod('vw_automobile_lite_single_post_meta_field_separator'));?></span>
+                      <span class="entry-date"><i class="<?php echo esc_attr(get_theme_mod('vw_automobile_lite_single_postdate_icon','fas fa-calendar-alt')); ?>"></i><a href="<?php echo esc_url( get_day_link( $vw_automobile_lite_archive_year, $vw_automobile_lite_archive_month, $vw_automobile_lite_archive_day)); ?>"><?php echo esc_html( get_the_date() ); ?><span class="screen-reader-text"><?php echo esc_html( get_the_date() ); ?></span></a></span><span><?php echo esc_html(get_theme_mod('vw_automobile_lite_single_post_meta_field_separator', '|'));?></span>
                     <?php } ?>
 
                     <?php if(get_theme_mod('vw_automobile_lite_single_author',true)==1){ ?>
-                      <span class="entry-author"><i class="<?php echo esc_attr(get_theme_mod('vw_automobile_lite_single_author_icon','far fa-user')); ?>"></i><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' )) ); ?>"><?php the_author(); ?></a></span><span><?php echo esc_html(get_theme_mod('vw_automobile_lite_single_post_meta_field_separator'));?></span>
+                      <span class="entry-author"><i class="<?php echo esc_attr(get_theme_mod('vw_automobile_lite_single_author_icon','far fa-user')); ?>"></i><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' )) ); ?>"><?php the_author(); ?></a></span><span><?php echo esc_html(get_theme_mod('vw_automobile_lite_single_post_meta_field_separator', '|'));?></span>
                     <?php } ?>
 
                     <?php if(get_theme_mod('vw_automobile_lite_single_comments',true)==1){ ?>
-                      <span class="entry-comments"><i class="<?php echo esc_attr(get_theme_mod('vw_automobile_lite_single_comments_icon','fas fa-comments')); ?>"></i><?php comments_number( __('0 Comments','vw-automobile-lite'), __('0 Comments','vw-automobile-lite'), __('% Comments','vw-automobile-lite')); ?></span><span><?php echo esc_html(get_theme_mod('vw_automobile_lite_single_post_meta_field_separator'));?></span>
+                      <span class="entry-comments"><i class="<?php echo esc_attr(get_theme_mod('vw_automobile_lite_single_comments_icon','fas fa-comments')); ?>"></i><?php comments_number( __('0 Comments','vw-automobile-lite'), __('0 Comments','vw-automobile-lite'), __('% Comments','vw-automobile-lite')); ?></span><span><?php echo esc_html(get_theme_mod('vw_automobile_lite_single_post_meta_field_separator', '|'));?></span>
                     <?php } ?>
 
                     <?php if(get_theme_mod('vw_automobile_lite_single_time',true)==1){ ?>

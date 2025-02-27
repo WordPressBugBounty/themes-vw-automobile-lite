@@ -7,7 +7,7 @@ Description: Our Automobile WordPress Theme is designed to be stylish and classy
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Version: 2.1.2
+Version: 2.1.3
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: vw-automobile-lite
@@ -2273,7 +2273,7 @@ nav.navigation.posts-navigation .nav-previous, nav.navigation.posts-navigation .
 }
 /*cart and checkout css*/
 .wp-block-woocommerce-cart .wc-block-cart__submit-button,a.wc-block-components-checkout-return-to-cart-button, .wc-block-components-checkout-place-order-button, .wc-block-components-totals-coupon__button{
-  background-color: #ff5400 !important;
+  background-color: #ff5400;
   color: #fff !important;
   text-decoration: none !important;
   border-radius: 10px;
@@ -2284,7 +2284,7 @@ nav.navigation.posts-navigation .nav-previous, nav.navigation.posts-navigation .
   left: 3% !important;
 }
 a.wc-block-components-checkout-return-to-cart-button{
-  padding: 15px 12px 15px 30px !important;
+  padding: 15px 10px 15px 30px !important;
 }
 .wp-block-woocommerce-cart .wc-block-cart__submit-button:hover, .wc-block-components-checkout-place-order-button:hover,a.wc-block-components-checkout-return-to-cart-button:hover{
   background: #000 !important;
@@ -2301,7 +2301,7 @@ a.wc-block-components-checkout-return-to-cart-button{
   margin-top: 20px;
 }
 .wp-block-woocommerce-cart .wc-block-components-product-badge{
-  background-color: #ff5400 !important;
+  background-color: #ff5400;
   color: #000 !important;
   padding: 10px !important;
   margin-bottom: 10px;
@@ -2325,6 +2325,9 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
 .wp-block-woocommerce-cart.alignwide, .wp-block-woocommerce-checkout.alignwide.wc-block-checkout{
   margin-right: auto !important;
   margin-left: auto !important;
+}
+form.woocommerce-form.woocommerce-form-login.login{
+  width: 450px;
 }
 /*------------- Contact us widgets --------------*/
 .custom_details {
@@ -2379,7 +2382,7 @@ form.wpcf7-form {
   margin-top: 20px;
 }
 .wp-block-woocommerce-cart .wc-block-components-product-badge{
-  background: #04456f;
+  background: #ff5400;
   color: #000 !important;
   padding: 10px !important;
   margin-bottom: 10px;
@@ -2412,9 +2415,9 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
   float: left;
   margin: 0 3.8% 2.992em 0;
 }
-.wp-block-woocommerce-empty-cart-block .wc-block-grid__product-onsale{
+.woocommerce-cart .wc-block-grid .wc-block-grid__product-onsale{
   padding: 5px 10px !important;
-  background: #ff5400 !important;
+  background: #ff5400;
   color: #fff !important;
   border-color: #ff5400 !important;
   border-radius: 0px !important;
@@ -2432,11 +2435,12 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
 .wp-block-woocommerce-empty-cart-block a.wc-block-grid__product-link{
   text-decoration: none !important;
 }
-.wp-block-woocommerce-empty-cart-block a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
+.woocommerce-cart .wp-block-woocommerce-empty-cart-block a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
   padding: 10px 12px;
   border-radius: 8px !important;
   font-size: 16px;
   text-decoration: none !important;
+  color: #ff5400;
 }
 .wp-block-woocommerce-empty-cart-block span.woocommerce-Price-amount.amount{
   font-size: 16px;
@@ -2456,6 +2460,10 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
   .admin-bar #header{
     margin-top: 46px;
   }
+  form.woocommerce-form.woocommerce-form-login.login{
+    width: auto;
+  }
+  
 }
 @media screen and (max-width:991px) {
 	.day-time{ 

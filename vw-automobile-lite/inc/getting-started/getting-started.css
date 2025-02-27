@@ -214,6 +214,12 @@ a.get-pro {
     border-radius: 2px;
     color: #f0002f;
     cursor: pointer;
+    font-size: 15px !important;
+    font-weight: bold;
+}
+.demo-content a.button.button-primary.site-btn{
+    font-size: 15px !important;
+    font-weight: bold;
 }
 .demo-content .theme-offer {
     text-align: justify;
