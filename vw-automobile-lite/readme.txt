@@ -4,7 +4,7 @@ Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Stable tag: 2.1.3
+Stable tag: 2.1.4
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -776,6 +776,11 @@ Our Automobile WordPress Theme is designed to be stylish and classy, much like a
   -- Added post date,author,comment and time icons change option in related post setting.
   -- Added classes to global color.
   -- Resolved css error for login page.
+  -- Updated pot file.
+
+= 2.1.4 =
+  -- Added meta separator in related post.
+  -- Resolved css error for sidebar tagclaud.
   -- Updated pot file.
 
 == Resources ==

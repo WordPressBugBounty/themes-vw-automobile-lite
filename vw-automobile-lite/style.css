@@ -7,7 +7,7 @@ Description: Our Automobile WordPress Theme is designed to be stylish and classy
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Version: 2.1.3
+Version: 2.1.4
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: vw-automobile-lite
@@ -1054,7 +1054,6 @@ a.r_button {
   color: #000 !important;
   border: 1px solid;
   padding: 4px;
-  margin: 10px;
 }
 /*--------------- Footer Section-------------- */
 .footer a:focus{
@@ -1271,12 +1270,12 @@ header.woocommerce-Address-title.title a{
   font-size: 16px !important;
   color: #000 !important;
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   text-transform: capitalize;
   background-color: #ff5400 !important;
   border: 2px solid transparent!important;
-  color: #ff5400 !important;
+  color: #fff !important;
 }
 header.woocommerce-Address-title.title a:hover,#tag-cloud-sec .tag-cloud-link:hover{
   background: #ff5400 !important;

@@ -1826,6 +1826,17 @@ function vw_automobile_lite_customize_register($wp_customize) {
 	    'type'    => 'icon'
   	)));
 
+  	$wp_customize->add_setting('vw_automobile_lite_related_post_meta_field_separator',array(
+		'default'=> '|',
+		'sanitize_callback'	=> 'sanitize_text_field'
+	));
+	$wp_customize->add_control('vw_automobile_lite_related_post_meta_field_separator',array(
+		'label'	=> __('Add Meta Separator','vw-automobile-lite'),
+		'description' => __('Add the seperator for meta box. Example: "|", "/", etc.','vw-automobile-lite'),
+		'section'=> 'vw_automobile_lite_related_posts_settings',
+		'type'=> 'text'
+	));
+
 	$wp_customize->add_setting( 'vw_automobile_lite_related_image_hide_show',array(
 		'default' => 1,
 		'transport' => 'refresh',
