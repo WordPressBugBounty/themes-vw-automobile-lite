@@ -1300,6 +1300,21 @@ function vw_automobile_lite_customize_register($wp_customize) {
             'Right' => esc_url(get_template_directory_uri()).'/images/layout3.png'
     ))));
 
+    $wp_customize->add_setting('vw_automobile_lite_align_footer_social_icon',array(
+        'default' => 'center',
+        'sanitize_callback' => 'vw_automobile_lite_sanitize_choices'
+	));
+	$wp_customize->add_control('vw_automobile_lite_align_footer_social_icon',array(
+        'type' => 'select',
+        'label' => __('Social Icon Alignment ','vw-automobile-lite'),
+        'section' => 'vw_automobile_lite_footer',
+        'choices' => array(
+            'left' => __('Left','vw-automobile-lite'),
+            'right' => __('Right','vw-automobile-lite'),
+            'center' => __('Center','vw-automobile-lite'),
+        ),
+	) );
+
 	//Blog Post Settings
 	$wp_customize->add_panel( 'vw_automobile_lite_blog_post_parent_panel', array(
 		'title' => esc_html__( 'Blog Post Settings', 'vw-automobile-lite' ),

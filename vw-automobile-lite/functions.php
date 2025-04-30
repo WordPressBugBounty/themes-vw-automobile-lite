@@ -388,25 +388,7 @@ function vw_automobile_lite_block_editor_styles() {
 }
 add_action( 'enqueue_block_editor_assets', 'vw_automobile_lite_block_editor_styles' );
 
-define('VW_AUTOMOBILE_LITE_FREE_THEME_DOC',__('https://preview.themescaliber.com/doc/free-automobile/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_SUPPORT',__('https://wordpress.org/support/theme/vw-automobile-lite/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_REVIEW',__('https://wordpress.org/support/theme/vw-automobile-lite/reviews/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_BUY_NOW',__('https://www.themescaliber.com/products/automobile-wordpress-theme','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_LIVE_DEMO',__('https://preview.themescaliber.com/tc-automobile-pro/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_PRO_DOC',__('https://preview.themescaliber.com/doc/tc-automobile-pro','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_FAQ',__('https://www.vwthemes.com/faqs/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_CHILD_THEME',__('https://developer.wordpress.org/themes/advanced-topics/child-themes/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_CONTACT',__('https://www.vwthemes.com/contact/','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_CREDIT',__('https://www.themescaliber.com/products/free-automobile-wordpress-theme','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_THEME_BUNDLE_BUY_NOW',__('https://www.vwthemes.com/products/wp-theme-bundle','vw-automobile-lite'));
-define('VW_AUTOMOBILE_LITE_THEME_BUNDLE_DOC',__('https://preview.vwthemesdemo.com/docs/theme-bundle/','vw-automobile-lite'));
 
-
-if (!function_exists('vw_automobile_lite_credit')) {
-	function vw_automobile_lite_credit() {
-		echo "<a href=".esc_url(VW_AUTOMOBILE_LITE_CREDIT)." target='_blank'>".esc_html__('Automobile WordPress Theme', 'vw-automobile-lite')."</a>";
-	}
-}
 
 /* Excerpt Limit Begin */
 function vw_automobile_lite_string_limit_words($string, $word_limit) {
@@ -570,33 +552,55 @@ endif;
 /* Implement the Custom Header feature. */
 require get_template_directory().'/inc/custom-header.php';
 
-/* Custom template tags for this theme. */
-require get_template_directory().'/inc/template-tags.php';
+function vw_automobile_lite_init_setup() {
+	/* Custom template tags for this theme. */
+	require get_template_directory().'/inc/template-tags.php';
 
-/* Customizer additions. */
-require get_template_directory().'/inc/customizer.php';
+	/* Customizer additions. */
+	require get_template_directory().'/inc/customizer.php';
 
-/* Implement the About theme page */
-require get_template_directory().'/inc/getting-started/getting-started.php';
+	/* Implement the About theme page */
+	require get_template_directory().'/inc/getting-started/getting-started.php';
 
-/* Social Custom Widgets */
-require get_template_directory() . '/inc/themes-widgets/social-icon.php';
+	/* Social Custom Widgets */
+	require get_template_directory() . '/inc/themes-widgets/social-icon.php';
 
-/* Customizer additions. */
-require get_template_directory() . '/inc/themes-widgets/about-us-widget.php';
+	/* Customizer additions. */
+	require get_template_directory() . '/inc/themes-widgets/about-us-widget.php';
 
-/* Customizer additions. */
-require get_template_directory() . '/inc/themes-widgets/contact-us-widget.php';
+	/* Customizer additions. */
+	require get_template_directory() . '/inc/themes-widgets/contact-us-widget.php';
 
-/* typography */
-require get_template_directory() . '/inc/typography/ctypo.php';
+	/* typography */
+	require get_template_directory() . '/inc/typography/ctypo.php';
 
-/* Block Pattern */
-require get_template_directory() . '/inc/block-patterns/block-patterns.php';
+	/* Block Pattern */
+	require get_template_directory() . '/inc/block-patterns/block-patterns.php';
 
-/* TGM Plugin Activation */
-require get_template_directory() . '/inc/tgm/tgm.php';
+	/* TGM Plugin Activation */
+	require get_template_directory() . '/inc/tgm/tgm.php';
+
+	/* Webfonts */
+	require get_template_directory() . '/inc/wptt-webfont-loader.php';
+
+	define('VW_AUTOMOBILE_LITE_FREE_THEME_DOC',__('https://preview.themescaliber.com/doc/free-automobile/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_SUPPORT',__('https://wordpress.org/support/theme/vw-automobile-lite/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_REVIEW',__('https://wordpress.org/support/theme/vw-automobile-lite/reviews/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_BUY_NOW',__('https://www.themescaliber.com/products/automobile-wordpress-theme','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_LIVE_DEMO',__('https://preview.themescaliber.com/tc-automobile-pro/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_PRO_DOC',__('https://preview.themescaliber.com/doc/tc-automobile-pro','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_FAQ',__('https://www.vwthemes.com/faqs/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_CHILD_THEME',__('https://developer.wordpress.org/themes/advanced-topics/child-themes/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_CONTACT',__('https://www.vwthemes.com/contact/','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_CREDIT',__('https://www.themescaliber.com/products/free-automobile-wordpress-theme','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_THEME_BUNDLE_BUY_NOW',__('https://www.vwthemes.com/products/wp-theme-bundle','vw-automobile-lite'));
+	define('VW_AUTOMOBILE_LITE_THEME_BUNDLE_DOC',__('https://preview.vwthemesdemo.com/docs/theme-bundle/','vw-automobile-lite'));
 
 
-/* Webfonts */
-require get_template_directory() . '/inc/wptt-webfont-loader.php';
+	if (!function_exists('vw_automobile_lite_credit')) {
+		function vw_automobile_lite_credit() {
+			echo "<a href=".esc_url(VW_AUTOMOBILE_LITE_CREDIT)." target='_blank'>".esc_html__('Automobile WordPress Theme', 'vw-automobile-lite')."</a>";
+		}
+	}
+}
+add_action( 'after_setup_theme', 'vw_automobile_lite_init_setup' );	

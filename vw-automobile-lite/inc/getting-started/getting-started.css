@@ -57,7 +57,7 @@ button.tablinks:focus {
     border: 1px solid #ddd;
     width: 20%;
     height: auto;
-    position: fixed;
+    position: absolute;
 }
 /* Style the buttons inside the tab */
 .tab button {

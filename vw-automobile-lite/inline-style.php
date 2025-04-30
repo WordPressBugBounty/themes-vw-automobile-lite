@@ -341,7 +341,7 @@
 		$vw_automobile_lite_custom_css .='}';
 	}
 
-	$vw_automobile_lite_button_letter_spacing = get_theme_mod('vw_automobile_lite_button_letter_spacing',14);
+	$vw_automobile_lite_button_letter_spacing = get_theme_mod('vw_automobile_lite_button_letter_spacing');
 	$vw_automobile_lite_custom_css .='.blogbutton-small {';
 		$vw_automobile_lite_custom_css .='letter-spacing: '.esc_attr($vw_automobile_lite_button_letter_spacing).';';
 	$vw_automobile_lite_custom_css .='}';
@@ -469,6 +469,21 @@
 		$vw_automobile_lite_custom_css .='.footer-2 p{';
 			$vw_automobile_lite_custom_css .='text-align: '.esc_attr($vw_automobile_lite_copyright_alignment).';';
 		$vw_automobile_lite_custom_css .='}';
+		$vw_automobile_lite_custom_css .='
+		@media screen and (max-width:720px) {
+			.footer-2 p{';
+			$vw_automobile_lite_custom_css .='text-align: center;} }';
+	}
+
+	$vw_automobile_lite_align_footer_social_icon = get_theme_mod('vw_automobile_lite_align_footer_social_icon');
+	if($vw_automobile_lite_align_footer_social_icon != false){
+		$vw_automobile_lite_custom_css .='.copyright .widget{';
+			$vw_automobile_lite_custom_css .='text-align: '.esc_attr($vw_automobile_lite_align_footer_social_icon).';';
+		$vw_automobile_lite_custom_css .='}';
+		$vw_automobile_lite_custom_css .='
+		@media screen and (max-width:720px) {
+			.copyright .widget{';
+			$vw_automobile_lite_custom_css .='text-align: center;} }';
 	}
 
 	$vw_automobile_lite_footer_padding = get_theme_mod('vw_automobile_lite_footer_padding');

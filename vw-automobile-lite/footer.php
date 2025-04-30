@@ -95,9 +95,9 @@
         <div class="footer-2">
             <div class="copyright container">
                 <p><?php vw_automobile_lite_credit(); ?> <?php echo esc_html(get_theme_mod('vw_automobile_lite_footer_copy',__('By VWThemes','vw-automobile-lite'))); ?></p>
-                <?php if ( ! dynamic_sidebar( 'footer-icon' ) ) : ?>
+                <?php if(get_theme_mod('vw_automobile_lite_footer_icon',false) != false) {?>
                     <?php dynamic_sidebar('footer-icon'); ?>
-                <?php endif; ?>
+                <?php }?>
                 <?php if( get_theme_mod( 'vw_automobile_lite_hide_show_scroll',true) == 1 || get_theme_mod( 'vw_automobile_lite_resp_scroll_top_hide_show',true) == 1) { ?>
                     <?php $vw_automobile_lite_theme_lay = get_theme_mod( 'vw_automobile_lite_scroll_top_alignment','Right');
                     if($vw_automobile_lite_theme_lay == 'Left'){ ?>
