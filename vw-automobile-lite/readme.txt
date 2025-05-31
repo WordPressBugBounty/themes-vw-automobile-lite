@@ -4,7 +4,7 @@ Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.2
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -789,6 +789,10 @@ Our Automobile WordPress Theme is designed to be stylish and classy, much like a
   -- Resolved error for show/hide footer social icons. 
   -- Fixed a issue related to early textdomain loading.
   -- Tested upto WP v6.8
+
+= 2.1.6 = 
+  -- Resolved css error for slider height..
+  -- Updated pot file.
 
 == Resources ==
 

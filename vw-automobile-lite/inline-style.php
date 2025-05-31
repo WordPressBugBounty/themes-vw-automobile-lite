@@ -180,7 +180,7 @@
 
 	/*-------------------Slider Height ------------*/
 
-	$vw_automobile_lite_slider_height = get_theme_mod('vw_automobile_lite_slider_height','550px');
+	$vw_automobile_lite_slider_height = get_theme_mod('vw_automobile_lite_slider_height');
 	if($vw_automobile_lite_slider_height != false){
 		$vw_automobile_lite_custom_css .='.slider img{';
 			$vw_automobile_lite_custom_css .='height: '.esc_attr($vw_automobile_lite_slider_height).';';

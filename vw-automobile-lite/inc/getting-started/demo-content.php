@@ -6,10 +6,10 @@
         // If the demo import is completed, display the "View Site" button
         if ($vw_automobile_lite_demo_import_completed) {
         echo '<p class="notice-text">' . esc_html__('Your demo import has been completed successfully.', 'vw-automobile-lite') . '</p>';
-        echo '<span><a href="' . esc_url(home_url()) . '" class="button button-primary site-btn" target="_blank">' . esc_html__('VIEW SITE', 'vw-automobile-lite') . '</a></span>';
+        echo '<span><a href="' . esc_url(home_url()) . '" class="button button-primary site-btn" target="_blank">' . esc_html__('View Site', 'vw-automobile-lite') . '</a></span>';
         }
 
-		//POST and update the customizer and other related data of POLITICAL CAMPAIGN
+		//POST and update the customizer and other related data
         if (isset($_POST['submit'])) {
 
 
@@ -119,7 +119,7 @@
     		update_option('vw_automobile_lite_demo_import_completed', true);
     		// Display success message and "View Site" button
     		echo '<p class="notice-text">' . esc_html__('Your demo import has been completed successfully.', 'vw-automobile-lite') . '</p>';
-    		echo '<span><a href="' . esc_url(home_url()) . '" class="button button-primary site-btn" target="_blank">' . esc_html__('VIEW SITE', 'vw-automobile-lite') . '</a></span>';
+    		echo '<span><a href="' . esc_url(home_url()) . '" class="button button-primary site-btn" target="_blank">' . esc_html__('View Site', 'vw-automobile-lite') . '</a></span>';
             //end 
 
 

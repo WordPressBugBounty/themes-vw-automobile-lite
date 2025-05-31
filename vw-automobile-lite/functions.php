@@ -96,7 +96,7 @@ add_action('after_setup_theme', 'vw_automobile_lite_setup');
 // Notice after Theme Activation
 function vw_automobile_lite_activation_notice() {
 	echo '<div class="notice notice-success is-dismissible welcome-notice">';
-		echo '<p>'.esc_html__('Thank you for choosing VW Automobile theme. Would like to have you on our Welcome page so that you can reap all the benefits of our VW Automobile theme.', 'vw-automobile-lite').'</p>';
+		echo '<p>'.esc_html__('Thank you for choosing VW Automobile theme. Would like to have you on our Welcome page so that you can read all the benefits of our VW Automobile theme.', 'vw-automobile-lite').'</p>';
 		echo '<span><a href="'. esc_url( admin_url( 'themes.php?page=vw_automobile_lite_guide' ) ) .'" class="button button-primary">'. esc_html__( 'DEMO IMPORT', 'vw-automobile-lite' ) .'</a></span>';
 		echo '<span class="demo-btn"><a href="'. esc_url( 'https://preview.themescaliber.com/tc-automobile-pro/' ) .'" class="button button-primary" target=_blank>'. esc_html__( 'VIEW DEMO', 'vw-automobile-lite' ) .'</a></span>';
 		echo '<span class="upgrade-btn"><a href="'. esc_url( 'https://www.themescaliber.com/products/automobile-wordpress-theme' ) .'" class="button button-primary" target=_blank>'. esc_html__( 'UPGRADE PRO', 'vw-automobile-lite' ) .'</a></span>';
@@ -349,7 +349,7 @@ function vw_automobile_lite_font_url() {
 	);
 	$font_url = add_query_arg($query_args,'//fonts.googleapis.com/css');
 	return $font_url;
-	$contents = wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
+	$contents = vw_automobile_lite_wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
 
 /* Theme enqueue scripts */

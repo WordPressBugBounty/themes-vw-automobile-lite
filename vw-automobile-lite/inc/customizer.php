@@ -542,7 +542,7 @@ function vw_automobile_lite_customize_register($wp_customize) {
 
 	//Slider height
 	$wp_customize->add_setting('vw_automobile_lite_slider_height',array(
-		'default'=> '550px',
+		'default'=> '',
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('vw_automobile_lite_slider_height',array(

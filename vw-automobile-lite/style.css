@@ -7,7 +7,7 @@ Description: Our Automobile WordPress Theme is designed to be stylish and classy
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 2.1.5
+Version: 2.1.6
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: vw-automobile-lite
@@ -2530,6 +2530,9 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
   }
 }
 @media screen and (max-width:720px) {
+  .slider img {
+    height: 250px;
+  }
   #sidebar h3, #sidebar .wp-block-search .wp-block-search__label{
     margin: 0px auto 10px auto;
   }
@@ -2634,6 +2637,9 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
   }
 }
 @media screen and (max-width: 1000px){
+  .slider .inner_carousel p{
+    display: none;
+  }
   .menubar .nav ul li a:focus,
   a.closebtn.mobile-menu:focus, .main-navigation a:focus{
     outline: 1px solid #000;
@@ -2788,9 +2794,6 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
     font-size: 12px;
     padding: 0px 10px;
   }
-  .slider img {
-    height: auto !important;
-  }
   .search-box i{
     margin-top: 0px;
     padding: 15px;
@@ -2803,6 +2806,14 @@ a.wc-block-components-product-name, .wc-block-components-product-name{
   .toggle-nav {
     width: auto;
     text-align: right;
+  }
+  .slider img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1199px){
+  .slider img {
+    height: 500px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1024px){
